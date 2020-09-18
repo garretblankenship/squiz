@@ -35,4 +35,5 @@ jobs:
             rm -rf squiz
             git clone https://github.com/garretblankenship/squiz.git
             python3.8 -m venv /home/github-actions/squiz/venv
-            /home/github-actions/squiz/venv/bin/pip install -r requirements.txt
+            source /home/github-actions/squiz/venv/bin/activate
+            pip install -r requirements.txt
